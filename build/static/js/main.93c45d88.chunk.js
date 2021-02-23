@@ -1,2 +1,0 @@
-(this["webpackJsonpfictional-fiesta"]=this["webpackJsonpfictional-fiesta"]||[]).push([[0],{4:function(e,t,s){"use strict";s.r(t);s(0);var i=s(2),n=s.n(i),a=s(3);n.a.render(Object(a.jsx)("h1",{className:"text-blue-500",children:"Hello, World"}),document.getElementById("root"))}},[[4,1,2]]]);
-//# sourceMappingURL=main.93c45d88.chunk.js.map
