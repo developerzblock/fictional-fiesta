@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/profile.js"],"names":["Profile"],"mappings":"2HAAA,+DAEe,SAASA,IACtB,OACE","file":"static/js/6.99ec6605.chunk.js","sourcesContent":["import React from 'react';\n\nexport default function Profile() {\n  return (\n    <p>Hello from Profile</p>\n  )\n}"],"sourceRoot":""}

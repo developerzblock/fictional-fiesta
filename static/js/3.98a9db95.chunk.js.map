@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/dashboard.js"],"names":["Dashboard"],"mappings":"2HAAA,+DAEe,SAASA,IACtB,OACE","file":"static/js/3.98a9db95.chunk.js","sourcesContent":["import React from 'react';\n\nexport default function Dashboard() {\n  return (\n    <p>Hello from Dashboard</p>\n  )\n}"],"sourceRoot":""}

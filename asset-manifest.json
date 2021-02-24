@@ -1,17 +1,27 @@
 {
   "files": {
-    "main.js": "/fictional-fiesta/static/js/main.1d391048.chunk.js",
-    "main.js.map": "/fictional-fiesta/static/js/main.1d391048.chunk.js.map",
-    "runtime-main.js": "/fictional-fiesta/static/js/runtime-main.9436884b.js",
-    "runtime-main.js.map": "/fictional-fiesta/static/js/runtime-main.9436884b.js.map",
-    "static/js/2.7e0c43e2.chunk.js": "/fictional-fiesta/static/js/2.7e0c43e2.chunk.js",
-    "static/js/2.7e0c43e2.chunk.js.map": "/fictional-fiesta/static/js/2.7e0c43e2.chunk.js.map",
+    "main.js": "/fictional-fiesta/static/js/main.1034a817.chunk.js",
+    "main.js.map": "/fictional-fiesta/static/js/main.1034a817.chunk.js.map",
+    "runtime-main.js": "/fictional-fiesta/static/js/runtime-main.7d437312.js",
+    "runtime-main.js.map": "/fictional-fiesta/static/js/runtime-main.7d437312.js.map",
+    "static/js/2.20c070ad.chunk.js": "/fictional-fiesta/static/js/2.20c070ad.chunk.js",
+    "static/js/2.20c070ad.chunk.js.map": "/fictional-fiesta/static/js/2.20c070ad.chunk.js.map",
+    "static/js/3.98a9db95.chunk.js": "/fictional-fiesta/static/js/3.98a9db95.chunk.js",
+    "static/js/3.98a9db95.chunk.js.map": "/fictional-fiesta/static/js/3.98a9db95.chunk.js.map",
+    "static/js/4.21ff0f28.chunk.js": "/fictional-fiesta/static/js/4.21ff0f28.chunk.js",
+    "static/js/4.21ff0f28.chunk.js.map": "/fictional-fiesta/static/js/4.21ff0f28.chunk.js.map",
+    "static/js/5.891c36cc.chunk.js": "/fictional-fiesta/static/js/5.891c36cc.chunk.js",
+    "static/js/5.891c36cc.chunk.js.map": "/fictional-fiesta/static/js/5.891c36cc.chunk.js.map",
+    "static/js/6.99ec6605.chunk.js": "/fictional-fiesta/static/js/6.99ec6605.chunk.js",
+    "static/js/6.99ec6605.chunk.js.map": "/fictional-fiesta/static/js/6.99ec6605.chunk.js.map",
+    "static/js/7.de295108.chunk.js": "/fictional-fiesta/static/js/7.de295108.chunk.js",
+    "static/js/7.de295108.chunk.js.map": "/fictional-fiesta/static/js/7.de295108.chunk.js.map",
     "index.html": "/fictional-fiesta/index.html",
-    "static/js/2.7e0c43e2.chunk.js.LICENSE.txt": "/fictional-fiesta/static/js/2.7e0c43e2.chunk.js.LICENSE.txt"
+    "static/js/2.20c070ad.chunk.js.LICENSE.txt": "/fictional-fiesta/static/js/2.20c070ad.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9436884b.js",
-    "static/js/2.7e0c43e2.chunk.js",
-    "static/js/main.1d391048.chunk.js"
+    "static/js/runtime-main.7d437312.js",
+    "static/js/2.20c070ad.chunk.js",
+    "static/js/main.1034a817.chunk.js"
   ]
 }

@@ -1,0 +1,2 @@
+(this["webpackJsonpfictional-fiesta"]=this["webpackJsonpfictional-fiesta"]||[]).push([[3],{29:function(t,i,n){"use strict";n.r(i),n.d(i,"default",(function(){return s}));n(0);var e=n(3);function s(){return Object(e.jsx)("p",{children:"Hello from Dashboard"})}}}]);
+//# sourceMappingURL=3.98a9db95.chunk.js.map
