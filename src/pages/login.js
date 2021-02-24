@@ -37,18 +37,21 @@ import Image from 'react';
 
 export default function Login() {
   return (
-    <div className="container flex mx-auto justify-center place-content-center content-center items-center">
+    <div className="container flex mx-auto max-w-screen-md items-center h-screen">
       
-      <div className="px-6">
+      <div className="flex w-3/5 px-6">
         <img src="/images/iphone-with-profile.jpg" alt="iPhone with Instagram app" />
       </div>
       
-      <div className="px-6">
+      <div className="flex flex-col w-2/5 p-6 border-1 border-solid border-gray-300 items-center text-center">
         <div className="">
-        logo
+          <h1 className="flex justify-center w-full">
+            <img src="/images/logo.png" alt="Instagram" className="mt-2 w-2/5" />
+          </h1>
+          <form />
         </div>
         <div className="">
-        form
+          <p>Dont have an account? <a href="#" title="Sign up">Sign up</a></p>
         </div>
       </div>
       
