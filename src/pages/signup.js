@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import FirebaseContext from '../context/firebase';
 import * as ROUTES from '../constants/routes';
+import { doesUsernameExist } from '../services/firebase';
 
 // =====================
 // Login.js page
@@ -53,30 +54,46 @@ export default function Signup() {
   const handleSignUp = async (event) => {
     event.preventDefault();
     
-    try {
-      const createdUserResult = await firebase.auth().createUserWithEmailAndPassword(emailAddress, password); // Resolve or Reject
+    // Check if username exists by using doesUsernameExist()
+    // Use if (!truth/false) {}
+    // We're in an asyncronous call, so we should await the result
+    const usernameExists = await doesUsernameExist(username);
+    
+    if (!usernameExists.length) {
+    
+      try {
+        
+        // Create user
+        const createdUserResult = await firebase.auth().createUserWithEmailAndPassword(emailAddress, password); // Resolve or Reject
       
-      await createdUserResult.user.updateProfile({
-        displayName: username
-      });
+        await createdUserResult.user.updateProfile({
+          displayName: username
+        });
       
-      await firebase.firestore.collections('users').add({
-        userId: createdUserResult.user.uid,
-        username: username.toLowerCase(),
-        fullName,
-        emailAddress: emailAddress.toLowerCase(),
-        following: [],
-        followers: [],
-        dateCreated: Date.now()
-      })
+        await firebase.firestore().collection('users').add({
+          userId: createdUserResult.user.uid,
+          username: username.toLowerCase(),
+          fullName,
+          emailAddress: emailAddress.toLowerCase(),
+          following: [],
+          followers: [],
+          dateCreated: Date.now()
+        })
+        
+        // Redirect to Dashboard
+        history.push(ROUTES.DASHBOARD);
+        
+      } catch (error) {
+        setFullName('');
+        setError(error.message); // Comes from Firebase
+      }
       
-      history.push(ROUTES.DASHBOARD);
-    } catch (error) {
+    } else {
       setUsername('');
       setFullName('');
       setEmailAddress('');
       setPassword('');
-      setError(error.message); // Comes from Firebase
+      setError('That username is already taken, please try another.'); // Comes from Firebase
     }
   }
 

@@ -8,6 +8,10 @@ export default function NotFound() {
   }, []);
   
   return (
-    <p>Hello from NotFound</p>
+    <div className="bg-gray-100">
+      <div className="mx-auto max-w-screen-lg">
+        <p className="text-center text2xl">404 Not Found!</p>
+      </div>
+    </div>
   )
 }
