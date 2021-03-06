@@ -12,6 +12,7 @@ export default function Signup() {
 
   const history = useHistory();
   const { firebase } = useContext(FirebaseContext);
+  
   const [ username, setUsername ] = useState('');
   const [ fullName, setFullName ] = useState('');
   const [ emailAddress, setEmailAddress ] = useState('');
@@ -57,9 +58,9 @@ export default function Signup() {
     // Check if username exists by using doesUsernameExist()
     // Use if (!truth/false) {}
     // We're in an asyncronous call, so we should await the result
-    const usernameExists = await doesUsernameExist(username);
+    const doesUsernameExistResult = await doesUsernameExist(username);
     
-    if (!usernameExists.length) {
+    if (doesUsernameExistResult && doesUsernameExistResult.length === 0) {
     
       try {
         

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import FirebaseContext from '../context/firebase';
+import UserContext from '../context/user';
 import * as ROUTES from '../constants/routes';
 import { HomeIcon, Signout } from './icons/icons.js';
 
@@ -8,9 +9,9 @@ export default function Header() {
  const { firebase } = useContext(FirebaseContext);
  
  //const user = null;
- const user = {
-   displayName: "karl"
- };
+ const { user } = useContext(UserContext);
+ 
+ console.log(user);
   
   return (
     <header className="h-16 bg-white border-b mb-8">
@@ -31,13 +32,14 @@ export default function Header() {
               // Logic here if you have a truthy value on a user
               // Use Firebase's firebase.auth().signOut()
               <>
-                <Link to={ROUTES.DASHBOARD} aria-label="Home">
+                <Link to={ROUTES.DASHBOARD} aria-label="Home" className="w-8 mr-6 text-black-light cursor-pointer">
                   <HomeIcon />
                 </Link>
                 
                 <button
                   type="button"
                   title="Sign Out"
+                  className="w-8 mr-6 text-black-light cursor-pointer"
                   onClick={() => firebase.auth().signOut()}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter') {
@@ -87,5 +89,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
